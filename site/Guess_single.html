@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var answer=parseInt(Math.random()*100);
+	var userAnswer=+prompt("Введите число ");
+	var tryAnswerCount=7;
+	for(var i=0; i<=tryAnswerCount; i++){
+		if(userAnswer<answer){
+			alert("Ваш ответ слишком маленький");
+		} else if (userAnswer>answer){
+			alert("Ваш ответ слишком большой");
+		} else if (userAnswer==answer){
+			alert("Вы угадали!");
+			break;
+		} else{
+			alert("Необходимо ввести число");
+		}
+	}
+</script>
