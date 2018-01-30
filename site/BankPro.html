@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var deposit=+prompt("Вас приветствует банковский калькулятор 'BankPro'. Введите любую, интересующую вас сумму, и мы просчитаем её вперёд на 5 лет");
+	var percent=+prompt("Теперь введите процент от вклада.");
+	if(isNaN(deposit)||isNaN(percent)){
+		alert("Вам нужно ввести цифру!");
+	} else{
+		for(var i=1; i<=5; i++){
+			var percent_real=(deposit*percent)/100;
+			deposit=percent_real+deposit;
+			alert("За " + i + " год вы получите: " + deposit.toFixed(2));
+		}
+	}
+</script>
