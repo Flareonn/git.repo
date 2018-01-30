@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var answer=parseInt(Math.random()*100);
+	while(true){
+		var userAnswer=prompt("Игрок 1. Введите число. Если вы хотите покинуть игру. Введите: quit ");
+		if(userAnswer=="quit"){
+			break;
+		} else{
+			userAnswer=parseInt(userAnswer);
+		} if(userAnswer<answer){
+			alert("Игрок 1. Ваш ответ слишком маленький.");
+		} else if (userAnswer>answer){
+			alert("Игрок 1. Ваш ответ слишком большой.");
+		} else if (userAnswer==answer){
+			alert("Игрок 1. Угадал!");
+			break;
+		} else{
+			alert("Игрок 1. Необходимо ввести число.");
+		}
+		var userAnswer2=prompt("Игрок 2. Введите число. Если вы хотите покинуть игру. Введите: quit ");
+		if(userAnswer2=="quit"){
+			break;
+		} else{
+			userAnswer2=parseInt(userAnswer2);
+		}
+		if(userAnswer2<answer){
+			alert("Игрок 2. Ваш ответ слишком маленький.");
+		} else if (userAnswer2>answer){
+			alert("Игрок 2. Ваш ответ слишком большой.");
+		} else if (userAnswer2==answer){
+			alert("Игрок 2. Угадал!");
+			break;
+		} else{
+			alert("Игрок 2. Необходимо ввести число.");
+		}
+	}
+</script>
