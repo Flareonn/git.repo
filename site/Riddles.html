@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var trueAnswerCount=0;
+	function getRiddle(answer, answerTrue) {
+		answer=answer.toLowerCase();
+		if (answer==answerTrue){
+			alert("Вы ответили верно! Это: " + answerTrue);
+			trueAnswerCount++;
+		} else{
+			alert("Вы ответили не верно! Правильный ответ: " + answerTrue);
+		}
+	}
+	var answer = prompt("Отгадайте загадку:\nЯ в зимнем саду\nЦелый день проведу.\nЗахвачу акварельные краски.\nНарисую...");
+	var answerTrue="анютины глазки";
+	getRiddle(answer, answerTrue);
+	answer=prompt("Красивые цветочки\nРасцвели в саду,\nЗапестрели красками, \nА осень на носу.");
+	answerTrue="астры";
+	getRiddle(answer, answerTrue);
+	answer=prompt("Колосится в поле рожь.\nТам, во ржи, цветок найдешь.\nЯрко-синий и пушистый, \nТолько жаль, что не душистый.");
+	answerTrue="василек";
+	getRiddle(answer, answerTrue);
+	answer=prompt("На воде растёт цветок - \nОдет в нежно-розовый лепесток.");
+	answerTrue="водяная лилия";
+	getRiddle(answer, answerTrue);
+	alert("Верных ответов: " + trueAnswerCount)
+</script>	
