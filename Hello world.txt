@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 print("Hello world;");
 print("Hello, everybody;");
 print("Hello;");
 print("Hello my dear friend;");
 print("Glad to see you;");
-print("Hello)0)))")
 print("I'm bug")
+print("Hello)0")
